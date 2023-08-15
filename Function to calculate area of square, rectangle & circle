@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+float circleArea(float rad);
+float rectangleArea(float a, float b);
+float squareArea(float side);
+
+int main(){
+    float a = 5.0;
+    float b=10.0;
+
+    printf("Area of Circle :%f\n", circleArea(b));
+    printf("Area of Square :%f\n", squareArea(a));
+    printf("Area of Rectangle :%f\n", rectangleArea( a,b));
+    
+    return 0;
+}
+
+float circleArea(float rad){
+    return 3.14*rad*rad ;
+} 
+float rectangleArea (float a, float b){
+    return a*b;
+}
+float squareArea(float side){
+    return side*side;
+}
