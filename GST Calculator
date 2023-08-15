@@ -1,0 +1,18 @@
+ #include <stdio.h>
+
+ int main(){
+    float value;
+    printf("Enter Price:");
+    scanf("%f",&value);
+    if (value>=50 && value <100){
+    printf("The total price with GST is : %f",value + (0.18*value) );
+    }
+     if (value>=100){
+    printf("The total price with GST is : %f",value + (0.20*value) );
+    }
+    else{
+        printf("The Total Price Is : %f", value);
+    }
+
+    return 0;
+ }
