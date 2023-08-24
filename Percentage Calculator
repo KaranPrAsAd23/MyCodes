@@ -5,7 +5,7 @@ int main (){
     int science =85;
     int maths=90;
     int hindi =100;
-    printf("The percentage is:%d",CalPercentage(science,maths,hindi));
+    printf("The percentage is:%d%%",CalPercentage(science,maths,hindi));
     return 0;
 }
 
