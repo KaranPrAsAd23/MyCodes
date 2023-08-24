@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int totalClasses, attendedClasses;
+
+    
+    printf("Enter the total number of classes: ");
+    scanf("%d", &totalClasses);
+
+    printf("Enter the number of classes attended: ");
+    scanf("%d", &attendedClasses);
+
+    
+    float attendancePercentage = (float)attendedClasses / totalClasses * 100;
+
+
+    printf("Attendance Percentage: %.2f%%\n", attendancePercentage);
+
+    if(attendancePercentage>=75 && attendancePercentage<=100 ){
+        printf("Your Attendance Is Good\n");
+    }
+    else{
+        printf("Your Attendance Is Poor\n");
+    
+        
+    }
+
+    return 0;
+}
